@@ -1,10 +1,14 @@
-- 👋 Hi, I’m @Rishank99
-- 👀 I’m interested in ...
-- 🌱 I’m currently learning ...
-- 💞️ I’m looking to collaborate on ...
-- 📫 How to reach me ...
+1290. Convert Binary Number in a Linked List to Integer
 
-<!---
-Rishank99/Rishank99 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+ public int getDecimalValue(ListNode head) {
+        
+       int sum=0;
+        
+       while(head!=null){
+           sum*=2;
+           sum+=head.val;
+           head=head.next;
+       }
+        return sum;
+    }
+
